@@ -7,8 +7,10 @@ export default function Home() {
   return (
     <main className="h-dvh grid place-items-center">
 
+     <div className="grid grid-cols-1 gap-4">
 
-      <div className="max-w-md mx-auto bg-texture p-6 rounded-lg shadow-lg">
+
+      <section className="max-w-lg mx-auto bg-texture p-6 rounded-lg shadow-lg">
         <div className="w-full grid place-items-center">
         <img 
             src={BrandLogo.src} 
@@ -43,13 +45,13 @@ export default function Home() {
           </div>
         </div>
 
-        <p className="m-4 text-xs text-gray-500 border-b p-2">Prices may vary. We offer tailored solutions to meet your specific business needs.
+        <p className="m-4 text-xs text-gray-500 border-b p-2">Prices may vary. I offer tailored solutions to meet your specific business needs.
         </p>
 
 
-      </div>
+      </section>
 
-      <section className="flex items-center max-w-md mx-auto bg-texture p-9 rounded-lg shadow-lg">
+      <section className="flex items-center  bg-texture px-9 rounded-lg shadow-lg">
 
         <div className="mt-4 flex justify-between items-center">
     
@@ -62,18 +64,20 @@ export default function Home() {
           </div>
         </div>
 
-        <div className=" items-center m-4 ">
+        <div className="p-2 items-center m-4 ">
           <Link href={"about"} className="m-2 text-purple-500 text-sm underline">
-            + Sobre Mi →
+          → + Sobre Mi 
           </Link>
           <br />
           <Link href={"blogs"} className="m-2 text-purple-500 text-sm underline">
-            Visita Mi blog →
+          → Visita Mi blog 
           </Link>
+          <br />
+          <a className="m-2 text-purple-500 text-sm underline" href="	https://wa.me/14493123765"> → Let's Talk </a>
         </div>
 
       </section>
-
+      </div>
 <style>
 
 </style>
