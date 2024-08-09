@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} min-w-[640px] grid place-items-center p-2 bg-square`}>
+      <body className={`${inter.className} min-w-[440px] grid place-items-center bg-square`}>
         
           {children}
         

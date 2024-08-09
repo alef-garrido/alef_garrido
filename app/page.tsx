@@ -54,7 +54,7 @@ export default function Home() {
         <div className="mt-4 flex justify-between items-center">
     
           <div className="flex items-center">
-            <Image src={ProfilePic.src} alt="Profile" width={70} height={70} className="m-2" />
+            <Image src={ProfilePic.src} alt="Profile" width={70} height={70} className="m-2 border rounded-xl" />
             <div>
               <p><b>Alef Garrido</b></p>
               <p className="text-sm font-light">AI Business <br /> Tech Consultant</p>
@@ -62,17 +62,21 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="m-4 ">
+        <div className=" items-center m-4 ">
           <Link href={"about"} className="m-2 text-purple-500 text-sm underline">
             + Sobre Mi →
           </Link>
           <br />
-          <Link href={"blogs"} className="m-2 text-purple-500 text-sm">
+          <Link href={"blogs"} className="m-2 text-purple-500 text-sm underline">
             Visita Mi blog →
           </Link>
         </div>
 
       </section>
+
+<style>
+
+</style>
 
     </main>
   )

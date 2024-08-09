@@ -11,7 +11,7 @@ export default async function BlogPage({
 }) {
   const blog = await getBlogBySlug(params.slug)
   return (
-    <main className="prose">
+    <main className="prose mx-auto bg-slate-100 p-6 rounded-lg shadow-lg">
       <article>{blog.content}</article>
     </main>
   )
