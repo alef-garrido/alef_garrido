@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg-square {
+    background-image: radial-gradient(#444cf7 1px, #e5e5f7 1px);
+    background-size: 20px 20px;
+  }
+  
+.bg-texture {
+  background-image: url('../public/bg-texture.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}  
+
+.border-box {
+  --mask:
+    radial-gradient(8.16px at 50% calc(100% - 11.2px),#000 99%,#0000 101%) calc(50% - 14px) 0/28px 100%,
+    radial-gradient(8.16px at 50% calc(100% + 4.2px),#0000 99%,#000 101%) 50% calc(100% - 7px)/28px 100% repeat-x;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+}

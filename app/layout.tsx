@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Alef • Lemat",
+  title: "Alef • Garrido",
   description: "Business Automation & Full time traveling.",
 };
 
@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} grid place-items-center p-8 bg-slate-200`}>
+      <body className={`${inter.className} min-w-[640px] grid place-items-center p-2 bg-square`}>
         
           {children}
         
