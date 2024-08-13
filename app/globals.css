@@ -19,6 +19,11 @@
   background-repeat: no-repeat;
 }  
 
+.bg-texture-xl {
+  background-image: url('../public/bg-texture-blue-Y.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}  
 
 .border-box {
   --mask:

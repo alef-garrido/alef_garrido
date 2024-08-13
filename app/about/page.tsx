@@ -1,10 +1,17 @@
-import Example from "./example.mdx"
+import Profile from "./profile.mdx"
 
 export default function AboutPage() {
   return (
-    <main className="mx-auto bg-texture p-6 rounded-lg shadow-lg">
+    <main className="
+      max-w-[420px] 
+      md:max-w-[950px] 
+      md:p-12
+      p-4 
+      bg-texture-xl 
+      rounded-lg 
+      shadow-lg">
       <section className="prose">
-        <Example />
+        <Profile />
       </section>
     </main>
   )
