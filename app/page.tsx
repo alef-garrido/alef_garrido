@@ -43,7 +43,7 @@ export default function Home() {
               → Visita Mi blog
             </Link>
             <br />
-            <a className="m-2 text-blue-500 text-sm underline" href="https://wa.me/14492638941"     target="_blank"> → Let&apos;s Talk </a>
+            <a className="m-2 text-blue-500 text-sm underline" href="https://wa.me/14492638941" target="_blank"> → Let&apos;s Talk </a>
           </div>
 
         </section>
@@ -58,20 +58,40 @@ export default function Home() {
             <div className="border-b pb-2">
               <h3 className="text-lg font-semibold">AI Strategy Consultation</h3>
               <p className="text-sm text-gray-600">90-minute personalized session · Zoom</p>
-              <p className="text-lg font-bold text-blue-600">US$ 300</p>
+              <p className="text-lg font-bold text-blue-600">
+                <a 
+                  href="https://buy.stripe.com/eVabJucaP62z7Kw144"
+                  className="hover:text-white"
+                  >
+                   → $ 300 USD </a>
+              </p>
             </div>
 
             <div className="border-b pb-2">
               <h3 className="text-lg font-semibold">Custom AI Assistant Package</h3>
               <p className="text-sm text-gray-600">Your dedicated AI + 4 implementation sessions</p>
-              <p className="text-lg font-bold text-blue-600">US$ 2,000</p>
+              <p className="text-lg font-bold text-blue-600">
+                <a 
+                    href="https://buy.stripe.com/6oE00M6QvgHd5CodQR"
+                    className="hover:text-white"
+                    >
+                 → $ 2,000 USD
+                </a>
+              </p>
             </div>
 
             <div>
               <h3 className="text-lg font-semibold text-green-600">Full AI Business Integration</h3>
               <p className="text-sm text-gray-600">AI system + Web app + 24/7 support</p>
               <div className="flex items-center border-b pb-2">
-                <p className="text-lg font-bold text-blue-600">US$ 5,000</p>
+                <p className="text-lg font-bold text-blue-600">
+                  <a 
+                      href="https://buy.stripe.com/bIYaFq8YD2Qn5CobIK"
+                      className="hover:text-white"
+                      >
+                     → $ 5,000 USD
+                    </a>
+                </p>
                 <span className="ml-2 bg-green-100 text-green-800 text-xs font-medium px-2 py-0.5 rounded">Best Value</span>
               </div>
             </div>
