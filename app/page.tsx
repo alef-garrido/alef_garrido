@@ -22,22 +22,28 @@ export default function Home() {
                 className="h-18 m-4"
               />
               <div className="py-4">
-                <p><b>Alef Lemat</b></p>
+                <p><b>Oscar Lemat</b></p>
                 <p className="text-sm font-light">Business <br /> Implementation.<br /> Project Manager</p>
               </div>
             </div>
           </div>
 
           <div className="p-2 items-center m-4 text-right ">
-            <Link href={"about"} className="m-2 text-purple-500 text-sm underline">
+            <Link 
+              href={"about"} 
+              className="m-2 
+              text-blue-500 
+              text-sm 
+              underline"
+              >
               → + Sobre Mi
             </Link>
             <br />
-            <Link href={"blogs"} className="m-2 text-purple-500 text-sm underline">
+            <Link href={"blogs"} className="m-2 text-blue-500 text-sm underline">
               → Visita Mi blog
             </Link>
             <br />
-            <a className="m-2 text-purple-500 text-sm underline" href="	https://wa.me/14493123765"> → Let&apos;s Talk </a>
+            <a className="m-2 text-blue-500 text-sm underline" href="https://wa.me/14492638941"     target="_blank"> → Let&apos;s Talk </a>
           </div>
 
         </section>

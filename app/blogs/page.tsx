@@ -5,7 +5,7 @@ export default async function BlogsPage() {
   const blogs = await getBlogs()
   return (
     <section className="max-w-5xl mx-auto grid place-items-center bg-texture-xl p-6 rounded-lg shadow-lg">
-      <h1 className="text-6xl">My Learning Resources</h1>
+      <h1 className="text-6xl">Education is Key</h1>
       <div className="m-8">
         <a className="" href="/">← Home</a>
       </div>

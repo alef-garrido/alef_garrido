@@ -1,4 +1,4 @@
-import Example from "./example.mdx"
+import Profile from "./profile.mdx"
 
 export default function AboutPage() {
   return (
@@ -11,7 +11,7 @@ export default function AboutPage() {
       rounded-lg 
       shadow-lg">
       <section className="prose">
-        <Example />
+        <Profile />
       </section>
     </main>
   )
