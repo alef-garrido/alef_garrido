@@ -9,7 +9,7 @@ export default function Home() {
 
       <div className="grid grid-cols-1 gap-2">
 
-        <section className="flex items-center  bg-texture  md:p-4 rounded-lg shadow-lg">
+        <section className="flex items-center  bg-texture-head  md:p-4 rounded-lg shadow-lg">
 
           <div className="mt-4 flex justify-between items-center">
 
@@ -29,13 +29,16 @@ export default function Home() {
           </div>
 
           <div className="p-2 items-center m-4 text-right ">
-            <Link 
-              href={"about"} 
+
+
+
+            <Link
+              href={"about"}
               className="m-2 
               text-blue-500 
               text-sm 
               underline"
-              >
+            >
               → + Sobre Mi
             </Link>
             <br />
@@ -43,7 +46,9 @@ export default function Home() {
               → Visita Mi blog
             </Link>
             <br />
-            <a className="m-2 text-blue-500 text-sm underline" href="https://wa.me/14492638941" target="_blank"> → Let&apos;s Talk </a>
+            <a className="m-2 text-blue-500 text-sm underline" href="https://wa.me/14493123765" target="_blank"> → Let&apos;s Talk </a>
+
+
           </div>
 
         </section>
@@ -59,11 +64,11 @@ export default function Home() {
               <h3 className="text-lg font-semibold">AI Strategy Consultation</h3>
               <p className="text-sm text-gray-600">90-minute personalized session · Zoom</p>
               <p className="text-lg font-bold text-blue-600">
-                <a 
+                <a
                   href="https://buy.stripe.com/eVabJucaP62z7Kw144"
                   className="hover:text-white"
-                  >
-                   → $ 300 USD </a>
+                >
+                  → $ 300 USD </a>
               </p>
             </div>
 
@@ -71,11 +76,11 @@ export default function Home() {
               <h3 className="text-lg font-semibold">Custom AI Assistant Package</h3>
               <p className="text-sm text-gray-600">Your dedicated AI + 4 implementation sessions</p>
               <p className="text-lg font-bold text-blue-600">
-                <a 
-                    href="https://buy.stripe.com/6oE00M6QvgHd5CodQR"
-                    className="hover:text-white"
-                    >
-                 → $ 2,000 USD
+                <a
+                  href="https://buy.stripe.com/6oE00M6QvgHd5CodQR"
+                  className="hover:text-white"
+                >
+                  → $ 2,000 USD
                 </a>
               </p>
             </div>
@@ -85,12 +90,12 @@ export default function Home() {
               <p className="text-sm text-gray-600">AI system + Web app + 24/7 support</p>
               <div className="flex items-center border-b pb-2">
                 <p className="text-lg font-bold text-blue-600">
-                  <a 
-                      href="https://buy.stripe.com/bIYaFq8YD2Qn5CobIK"
-                      className="hover:text-white"
-                      >
-                     → $ 5,000 USD
-                    </a>
+                  <a
+                    href="https://buy.stripe.com/bIYaFq8YD2Qn5CobIK"
+                    className="hover:text-white"
+                  >
+                    → $ 5,000 USD
+                  </a>
                 </p>
                 <span className="ml-2 bg-green-100 text-green-800 text-xs font-medium px-2 py-0.5 rounded">Best Value</span>
               </div>
@@ -103,8 +108,15 @@ export default function Home() {
 
         </section>
 
-        <section className=" bg-texture p-8 rounded-lg shadow-lg md:row-span-2">
-          <h2 className="text-3xl my-4 overline">Operate 250% faster <br /> in every team:</h2>
+        <section className=" bg-texture-foot p-8 rounded-lg shadow-lg md:row-span-2">
+          <div className="px-4 flex items-center gap-4">
+            <div className="relative right-1">
+              <div className="w-4 h-4 bg-red-500 rounded-full"></div>
+              <div className="w-4 h-4 bg-red-500 rounded-full absolute top-0 left-0 animate-ping"></div>
+              <div className="w-4 h-4 bg-red-500 rounded-full absolute top-0 left-0 animate-pulse"></div>
+            </div>
+            <h2 className="text-3xl my-4 overline">Operate 250% faster <br /> in every team:</h2>
+          </div>
           <hr />
 
           <div className="container mx-auto m-4">
@@ -120,7 +132,7 @@ export default function Home() {
         </section>
 
       </div>
-   
+
 
     </main>
   )

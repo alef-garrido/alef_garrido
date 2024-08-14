@@ -7,7 +7,7 @@ export default function AboutPage() {
       md:max-w-[950px] 
       md:p-12
       p-4 
-      bg-texture-xl 
+      bg-texture-y 
       rounded-lg 
       shadow-lg">
       <section className="prose">

@@ -19,12 +19,22 @@
   background-repeat: no-repeat;
 }  
 
-.bg-texture-xl {
+.bg-texture-y {
   background-image: url('../public/bg-texture-blue-Y.png');
   background-size: cover;
   background-repeat: no-repeat;
 }  
 
+.bg-texture-head {
+  background-image: url('../public/bg-texture-header.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bg-texture-foot {
+  background-image: url('../public/bg-texture-footer.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .border-box {
   --mask:
     radial-gradient(8.16px at 50% calc(100% - 11.2px),#000 99%,#0000 101%) calc(50% - 14px) 0/28px 100%,
