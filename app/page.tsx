@@ -5,11 +5,11 @@ import BrandLogo from "@/public/MD_Logo_861x163.png"
 
 export default function Home() {
   return (
-    <main className="max-w-[500px] h-dvh grid place-items-center ">
+    <main className="max-w-[1080px] h-dvh grid place-items-center ">
 
       <div className="grid grid-cols-1 gap-2">
 
-        <section className="flex items-center  bg-texture-head  md:p-4 rounded-lg shadow-lg">
+        <section className="flex items-center  bg-texture-head  md:px-2 md:pb-2 rounded-lg shadow-lg">
 
           <div className="mt-4 flex justify-between items-center">
 
@@ -23,37 +23,34 @@ export default function Home() {
               />
               <div className="py-4">
                 <p><b>Oscar Lemat</b></p>
-                <p className="text-sm font-light">Business <br /> Implementation.<br /> Project Manager</p>
+                <p className="text-sm font-light">Business <br /> Implementation.<br /> Tech Assitance</p>
               </div>
             </div>
           </div>
 
           <div className="p-2 items-center m-4 text-right ">
-
-
-
             <Link
               href={"about"}
               className="m-2 
-              text-blue-500 
+              text-stone-950 
               text-sm 
               underline"
             >
-              → + Sobre Mi
+              + Sobre mi →
             </Link>
             <br />
-            <Link href={"blogs"} className="m-2 text-blue-500 text-sm underline">
-              → Visita Mi blog
+            <Link href={"blogs"} className="m-2 text-stone-950 text-sm underline">
+              Mi blog →
             </Link>
             <br />
-            <a className="m-2 text-blue-500 text-sm underline" href="https://wa.me/14493123765" target="_blank"> → Let&apos;s Talk </a>
+            <a className="m-2 text-stone-950 text-sm underline" href="https://wa.me/14493123765" target="_blank">  Let&apos;s Talk → </a>
 
 
           </div>
 
         </section>
 
-        <section className="max-w-lg mx-auto bg-texture p-6 rounded-lg shadow-lg">
+        <section className="max-w-lg mx-auto bg-texture p-8 rounded-lg shadow-lg">
           <div className="w-full grid place-items-center">
 
           </div>
@@ -102,7 +99,7 @@ export default function Home() {
             </div>
           </div>
 
-          <p className="m-4 text-xs text-gray-500 border-b p-2">Prices may vary. I offer tailored solutions to meet your specific business needs.
+          <p className="m-4 text-xs text-gray-500 border-b p-2">Prices may vary. <br /> I offer tailored solutions to meet your specific business needs.
           </p>
 
 
