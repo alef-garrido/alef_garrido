@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <h3 className="font-display text-xl mb-4">Going Hybrid</h3>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-sm text-black">
               Reclaiming the balance between digital and physical worlds.
             </p>
           </div>
@@ -20,27 +20,27 @@ const Footer: React.FC = () => {
             <h4 className="font-medium mb-2">Quick Links</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#manifesto" className="text-muted-foreground hover:text-primary transition-colors">
+                <a href="#manifesto" className="text-black hover:text-primary transition-colors">
                   Manifesto
                 </a>
               </li>
               <li>
-                <a href="#digital-maze" className="text-muted-foreground hover:text-primary transition-colors">
+                <a href="#digital-maze" className="text-black hover:text-primary transition-colors">
                   Digital Maze
                 </a>
               </li>
               <li>
-                <a href="#dinamico" className="text-muted-foreground hover:text-primary transition-colors">
+                <a href="#dinamico" className="text-black hover:text-primary transition-colors">
                   Dinami_CO
                 </a>
               </li>
               <li>
-                <a href="#xnoria" className="text-muted-foreground hover:text-primary transition-colors">
+                <a href="#xnoria" className="text-black hover:text-primary transition-colors">
                   Xnor_IA
                 </a>
               </li>
               <li>
-                <a href="#nomad-proxy" className="text-muted-foreground hover:text-primary transition-colors">
+                <a href="#nomad-proxy" className="text-black hover:text-primary transition-colors">
                   nomad_proxy
                 </a>
               </li>
@@ -53,14 +53,14 @@ const Footer: React.FC = () => {
               href="https://instagram.com" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+              className="flex items-center gap-2 text-black hover:text-primary transition-colors"
             >
               <Instagram className="w-5 h-5" />
               <span>Follow on Instagram</span>
             </a>
             
             <div className="pt-4">
-              <p className="text-xs text-muted-foreground">
+              <p className="text-xs text-black">
                 &copy; {currentYear} Going Hybrid. All rights reserved.
               </p>
             </div>

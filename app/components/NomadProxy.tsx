@@ -16,7 +16,7 @@ const NomadProxy: React.FC = () => {
             <h2 className="font-display text-3xl">nomad_proxy</h2>
           </div>
           
-          <p className="text-muted-foreground mb-8">
+          <p className="text-black mb-8">
             A suite of services designed to support your hybrid lifestyle and workflow.
             nomad_proxy helps you navigate the intersection of digital and physical worlds with ease.
           </p>
@@ -26,7 +26,7 @@ const NomadProxy: React.FC = () => {
               <div className="space-y-6">
                 <div className="space-y-2">
                   <h3 className="font-display text-xl">Our Services</h3>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-sm text-black">
                     nomad_proxy helps bridge the gap between digital efficiency and physical presence.
                   </p>
                 </div>
@@ -34,28 +34,28 @@ const NomadProxy: React.FC = () => {
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div className="p-4 border rounded-md">
                     <h4 className="font-medium mb-2">Physical Mail Handling</h4>
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-sm text-black">
                       We receive, scan, and forward your mail to wherever you are.
                     </p>
                   </div>
                   
                   <div className="p-4 border rounded-md">
                     <h4 className="font-medium mb-2">Hybrid Workspace Solutions</h4>
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-sm text-black">
                       Physical and digital workspaces that adapt to your needs.
                     </p>
                   </div>
                   
                   <div className="p-4 border rounded-md">
                     <h4 className="font-medium mb-2">Document Processing</h4>
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-sm text-black">
                       Converting between physical and digital documents seamlessly.
                     </p>
                   </div>
                   
                   <div className="p-4 border rounded-md">
                     <h4 className="font-medium mb-2">Hybrid Event Support</h4>
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-sm text-black">
                       Facilitating events that bridge online and in-person experiences.
                     </p>
                   </div>

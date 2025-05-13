@@ -53,14 +53,14 @@ const DinamiCO: React.FC = () => {
           
           <div className="space-y-6 order-1 lg:order-2">
             <h2 className="font-display text-3xl sm:text-4xl">Dinami_CO</h2>
-            <p className="text-muted-foreground">
+            <p className="text-black">
               Curated party-dinners that combine intellectual stimulation with genuine social connection, 
               designed to forge meaningful relationships around shared ideas.
             </p>
             
             <div className="space-y-2">
               <h3 className="font-display text-xl">What to Expect:</h3>
-              <ul className="list-disc list-inside space-y-1 text-muted-foreground">
+              <ul className="list-disc list-inside space-y-1 text-black">
                 <li>Thoughtfully curated guest lists</li>
                 <li>Structured conversations on fascinating topics</li>
                 <li>Delicious meals in inspiring settings</li>
@@ -73,7 +73,7 @@ const DinamiCO: React.FC = () => {
                 {!isSubmitted ? (
                   <div className="space-y-4">
                     <h3 className="font-display text-xl">Request an Invitation</h3>
-                    <p className="text-sm text-muted-foreground mb-2">
+                    <p className="text-sm text-black mb-2">
                       Interested in attending a Dinami_CO dinner? Tell us a bit about yourself.
                     </p>
                     
@@ -124,7 +124,7 @@ const DinamiCO: React.FC = () => {
                       <Check className="h-6 w-6 text-secondary" />
                     </div>
                     <h3 className="font-display text-xl">Request Received</h3>
-                    <p className="text-muted-foreground mb-4">
+                    <p className="text-black mb-4">
                       Thank you for your interest! We'll review your request and be in touch soon.
                     </p>
                   </div>

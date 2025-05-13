@@ -44,7 +44,7 @@ const Contact: React.FC = () => {
       <div className="hybrid-container">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="font-display text-3xl sm:text-4xl mb-4">Get in Touch</h2>
-          <p className="text-muted-foreground">
+          <p className="text-black">
             Have questions about the Going Hybrid philosophy or any part of our ecosystem?
           </p>
         </div>
@@ -113,7 +113,7 @@ const Contact: React.FC = () => {
                   <Check className="h-8 w-8 text-primary" />
                 </div>
                 <h3 className="font-display text-2xl">Message Sent!</h3>
-                <p className="text-muted-foreground max-w-md mx-auto">
+                <p className="text-black max-w-md mx-auto">
                   Thank you for reaching out. We'll review your message and get back to you as soon as possible.
                 </p>
               </div>
@@ -122,7 +122,7 @@ const Contact: React.FC = () => {
         </Card>
         
         <div className="mt-12 flex justify-center">
-          <div className="flex items-center gap-2 text-muted-foreground">
+          <div className="flex items-center gap-2 text-black">
             <Mail className="w-4 h-4" />
             <span>Or email us directly at:</span>
             <a href="mailto:contact@goinghybrid.com" className="text-primary hover:underline">

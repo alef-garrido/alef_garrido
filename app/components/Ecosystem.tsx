@@ -31,7 +31,7 @@ const EcosystemItem: React.FC<EcosystemItemProps> = ({
         <CardDescription>{description}</CardDescription>
       </CardHeader>
       <CardContent>
-        <p className="text-sm text-muted-foreground">{description}</p>
+        <p className="text-sm text-black">{description}</p>
       </CardContent>
       <CardFooter>
         <Button variant="outline" asChild>

@@ -57,7 +57,7 @@ const Hero: React.FC = () => {
               <span className="text-primary"> digital </span>
               paradigm.
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground max-w-lg">
+            <p className="text-lg md:text-xl text-black max-w-lg">
               Going Hybrid is a philosophy, an ecosystem, and a set of tools designed to help you reclaim the value of physical interactions in our increasingly digital world.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">

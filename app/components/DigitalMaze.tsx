@@ -33,14 +33,14 @@ const DigitalMaze: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h2 className="font-display text-3xl sm:text-4xl">Digital Maze</h2>
-            <p className="text-muted-foreground">
+            <p className="text-black">
               A print-and-play game that brings digital concepts into the physical world, 
               designed to foster meaningful connections and thoughtful conversations.
             </p>
             
             <div className="space-y-2">
               <h3 className="font-display text-xl">Key Features:</h3>
-              <ul className="list-disc list-inside space-y-1 text-muted-foreground">
+              <ul className="list-disc list-inside space-y-1 text-black">
                 <li>Printable board and cards</li>
                 <li>Engaging gameplay for 2-6 players</li>
                 <li>Thought-provoking questions and challenges</li>
@@ -54,7 +54,7 @@ const DigitalMaze: React.FC = () => {
               {!isSubmitted ? (
                 <div className="space-y-4">
                   <h3 className="font-display text-xl">Get Your Free Copy</h3>
-                  <p className="text-sm text-muted-foreground mb-4">
+                  <p className="text-sm text-black mb-4">
                     Enter your email to receive the free print-and-play version of Digital Maze.
                   </p>
                   
@@ -88,7 +88,7 @@ const DigitalMaze: React.FC = () => {
                     <Check className="h-6 w-6 text-primary" />
                   </div>
                   <h3 className="font-display text-xl">Thank You!</h3>
-                  <p className="text-muted-foreground mb-4">
+                  <p className="text-black mb-4">
                     Check your email for the download link to Digital Maze.
                   </p>
                 </div>

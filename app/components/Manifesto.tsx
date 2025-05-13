@@ -11,14 +11,14 @@ const Manifesto: React.FC = () => {
       <div className="hybrid-container">
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-12">
           <h2 className="font-display text-3xl sm:text-4xl">The Going Hybrid Manifesto</h2>
-          <p className="text-muted-foreground">
+          <p className="text-black">
             Our philosophy on reclaiming the balance between digital and physical worlds.
           </p>
         </div>
         
         <Card className="mb-8 shadow-lg">
           <CardContent className="p-8">
-            <div className="prose prose-lg max-w-none">
+            <div className="prose prose-lg text-black max-w-none">
               <h3 className="font-display text-2xl mb-4">The Limitations of a Digital-Only Approach</h3>
               <p className="mb-4">
                 In our rush to digitize everything, we've lost something profound: the tactile experience, 
