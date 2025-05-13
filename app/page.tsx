@@ -27,7 +27,7 @@ export default function Home() {
 
           <div className="container mx-auto m-4">
             <ul className="grid place-items-center text-1xl grid-cols-3 gap-4">
-              <li className="my-2 w-30 h-4 rounded-sm bg-green-400">⚙️General</li>
+              <li className="my-2 w-30 h-4 rounded-sm bg-green-400">⚙️Leadership</li>
               <li className="my-2 w-34 h-4 rounded-sm bg-green-400">⚒️Operations</li>
               <li className="my-2 w-30 h-4 rounded-sm bg-green-400">🏷️Product</li>
             </ul>
