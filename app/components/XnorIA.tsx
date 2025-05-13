@@ -29,14 +29,14 @@ const XnorIA: React.FC = () => {
 
   return (
     <section id="xnoria" className="p-16 bg-texture-y text-black">
-      <div className="hybrid-container">
+      <div className=" ">
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-12">
           <div className="w-16 h-16 bg-hybrid-blue/20 rounded-full flex items-center justify-center mx-auto mb-6">
             <Layers className="h-8 w-8 text-hybrid-blue" />
           </div>
           <h2 className="font-display text-3xl sm:text-4xl">Xnor_IA</h2>
           <p className="text-black">
-            The next evolution in our hybrid ecosystem: print and run digital solutions for strategic technology integration.
+            The next evolution in our hybrid ecosystem: print and Run digital solutions for strategic technology integration.
           </p>
         </div>
         

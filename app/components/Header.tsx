@@ -5,7 +5,7 @@ import { cn } from "../lib/utils";
 const Header: React.FC = () => {
   return (
     <header className="py-6 border-b border-border">
-      <div className="hybrid-container flex justify-between items-center">
+      <div className="  flex justify-between items-center">
         <div>
           <h1 className="text-2xl sm:text-3xl font-display">Going Hybrid</h1>
         </div>

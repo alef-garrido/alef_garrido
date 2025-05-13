@@ -43,7 +43,7 @@ const DinamiCO: React.FC = () => {
 
   return (
     <section id="dinamico" className="p-16 bg-texture-head">
-      <div className="hybrid-container">
+      <div className=" ">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className={cn(
             "relative h-96 rounded-xl overflow-hidden border border-border order-2 lg:order-1",
@@ -54,7 +54,7 @@ const DinamiCO: React.FC = () => {
           <div className="space-y-6 order-1 lg:order-2">
             <h2 className="font-display text-3xl sm:text-4xl">Dinami_CO</h2>
             <p className="text-black">
-              Curated party-dinners that combine intellectual stimulation with genuine social connection, 
+              Curated Hybrid events that combine intellectual stimulation with genuine social connection, 
               designed to forge meaningful relationships around shared ideas.
             </p>
             

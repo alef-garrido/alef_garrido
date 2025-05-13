@@ -54,7 +54,7 @@ const Ecosystem: React.FC = () => {
     },
     {
       title: "Dinami_CO",
-      description: "Party-dinners that combine intellectual stimulation with social connection.",
+      description: "Hybrid events that combine intellectual stimulation with social connection.",
       icon: <Users className="h-6 w-6 text-black" />,
       linkText: "Request Invitation",
       linkHref: "#dinamico",
@@ -62,7 +62,7 @@ const Ecosystem: React.FC = () => {
     },
     {
       title: "Xnor_IA",
-      description: "Print and run digital solutions for strategic technology integration.",
+      description: "Print and Run digital solutions for strategic technology integration.",
       icon: <Layers className="h-6 w-6 text-black" />,
       linkText: "Learn More",
       linkHref: "#xnoria",
@@ -80,7 +80,7 @@ const Ecosystem: React.FC = () => {
 
   return (
     <section id="ecosystem" className="p-16 bg-texture-head">
-      <div className="hybrid-container">
+      <div className=" ">
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-12">
           <h2 className="font-display text-3xl sm:text-4xl">My Service Ecosystem</h2>
           <p className="text-black">

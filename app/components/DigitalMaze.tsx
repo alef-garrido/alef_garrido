@@ -29,7 +29,7 @@ const DigitalMaze: React.FC = () => {
 
   return (
     <section id="digital-maze" className="p-16 bg-texture-head">
-      <div className="hybrid-container">
+      <div className=" ">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h2 className="font-display text-3xl sm:text-4xl">Digital Maze</h2>

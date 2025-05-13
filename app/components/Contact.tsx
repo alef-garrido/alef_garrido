@@ -41,7 +41,7 @@ const Contact: React.FC = () => {
 
   return (
     <section id="contact" className="py-16 bg-texture-head rounded-lg">
-      <div className="hybrid-container">
+      <div className=" ">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="font-display text-3xl sm:text-4xl mb-4">Get in Touch</h2>
           <p className="text-black">

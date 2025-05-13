@@ -7,7 +7,7 @@ import { FileText, Download } from 'lucide-react';
 const Hero: React.FC = () => {
   return (
     <section id="hero" className="bg-texture-y p-16 md:py-24">
-      <div className="hybrid-container">
+      <div className=" ">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Hero content section */}
           <div className="space-y-6 animate-fade-in">
@@ -23,7 +23,7 @@ const Hero: React.FC = () => {
                     Digital & Physical
                   </p>
                   <p className="text-xs font-light text-center">
-                    Balancing technology<br />
+                    Leveraging technology<br />
                     with meaningful<br />
                     human interactions
                   </p>
@@ -53,13 +53,16 @@ const Hero: React.FC = () => {
             </div>
 
             <h1 className="font-display text-4xl sm:text-5xl md:text-6xl leading-tight">
-              Escape the purely
-              <span className="text-primary"> digital </span>
-              paradigm.
+              Escape the 
+              <span className="text-primary"> Digital Maze.</span>
             </h1>
+
+            <h2> Change your paradigms.</h2>
+
             <p className="text-lg md:text-xl text-black max-w-lg">
               Going Hybrid is a philosophy, an ecosystem, and a set of tools designed to help you reclaim the value of physical interactions in our increasingly digital world.
             </p>
+
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Button size="lg" className="gap-2" asChild>
                 <a href="#manifesto">

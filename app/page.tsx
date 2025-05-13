@@ -1,6 +1,4 @@
-import Image from "next/image"
-import Link from "next/link"
-import BrandLogo from "@/public/pp.png"
+
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Manifesto from './components/Manifesto';
@@ -15,54 +13,7 @@ import Footer from './components/Footer';
 export default function Home() {
   return (
     <main className="max-w-[1080px] h-dvh grid place-items-center">
-
       <div className="grid grid-cols-1 gap-2 shadow-lg">
-
-      <section className="grid grid-rows-2 p-4 bg-texture-head rounded-lg shadow-lg">
-          <div className="w-full flex justify-center">
-            <Image
-              src={BrandLogo.src}
-              alt="Company"
-              width={100}
-              height={100}
-            />
-          </div>
-          
-          <div className="grid place-items-center grid-cols-2">
-            <div className="flex-col items-center">
-                <p className="text-lg">
-                  <b>Alef Lemat</b>
-                </p>
-                <p className="text-xs font-light">Business <br /> Implementation.<br /> Tech Assitance</p>
-            </div>
-
-            <div className="flex flex-col items-end justify-center">
-              <Link
-                href={"about"}
-                className="text-blue-500 text-sm underline hover:text-green-500"
-              >
-                + Sobre mi →
-              </Link>
-              <Link href={"blogs"} className="text-blue-500 text-sm underline hover:text-green-500">
-                Mi blog →
-              </Link>
-              <a className="text-blue-500 text-sm underline hover:text-green-500" href="https://wa.me/14493123765" target="_blank">
-                Let&apos;s Talk →
-              </a>
-            </div>
-          </div>
-        </section>
-
-        <Hero />
-        <Manifesto />
-        <Ecosystem />
-        <DigitalMaze />
-        <DinamiCO />
-        <XnorIA />
-        <NomadProxy />
-        <Contact />
-
-
         <section className="bg-texture-foot p-8 rounded-lg shadow-lg row-span-2">
           <div className="px-4 flex items-center gap-4">
             <div className="relative right-1">
@@ -82,6 +33,22 @@ export default function Home() {
             </ul>
           </div>
         </section>
+
+
+        <Hero />
+        <Manifesto />
+        <Ecosystem />
+        <DigitalMaze />
+        <DinamiCO />
+        <XnorIA />
+        <NomadProxy />
+        <Contact />
+
+
+
+        <Footer />
+
+
 
       </div>
     </main>
