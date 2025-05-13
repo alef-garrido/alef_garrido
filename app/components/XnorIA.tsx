@@ -28,14 +28,14 @@ const XnorIA: React.FC = () => {
   };
 
   return (
-    <section id="xnoria" className="p-16 bg-texture-y text-white">
+    <section id="xnoria" className="p-16 bg-texture-y text-black">
       <div className="hybrid-container">
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-12">
           <div className="w-16 h-16 bg-hybrid-blue/20 rounded-full flex items-center justify-center mx-auto mb-6">
             <Layers className="h-8 w-8 text-hybrid-blue" />
           </div>
           <h2 className="font-display text-3xl sm:text-4xl">Xnor_IA</h2>
-          <p className="text-gray-300">
+          <p className="text-black">
             The next evolution in our hybrid ecosystem: print and run digital solutions for strategic technology integration.
           </p>
         </div>
@@ -44,15 +44,15 @@ const XnorIA: React.FC = () => {
           <CardContent className="p-6">
             <div className="space-y-6">
               <div>
-                <h3 className="font-display text-xl text-white mb-2">Coming Soon</h3>
-                <p className="text-sm text-gray-300">
+                <h3 className="font-display text-xl text-black mb-2">Coming Soon</h3>
+                <p className="text-sm text-black">
                   Xnor_IA combines physical tools with digital intelligence to create a truly hybrid workflow.
                 </p>
               </div>
               
               <div className="space-y-2">
-                <h4 className="font-medium text-white">Key Features:</h4>
-                <ul className="space-y-1 text-gray-300">
+                <h4 className="font-medium text-black">Key Features:</h4>
+                <ul className="space-y-1 text-black">
                   <li className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 rounded-full bg-hybrid-blue"></div>
                     <span>Printable templates with digital augmentation</span>
@@ -71,7 +71,7 @@ const XnorIA: React.FC = () => {
               {!isSubmitted ? (
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div className="space-y-1">
-                    <p className="text-xs text-gray-300">Sign up for early access:</p>
+                    <p className="text-xs text-black">Sign up for early access:</p>
                     <Input
                       type="email"
                       placeholder="Your email address"
@@ -94,7 +94,7 @@ const XnorIA: React.FC = () => {
                   <div className="w-12 h-12 bg-hybrid-blue/10 rounded-full flex items-center justify-center mx-auto">
                     <Check className="h-6 w-6 text-hybrid-blue" />
                   </div>
-                  <p className="text-sm text-gray-300">
+                  <p className="text-sm text-black">
                     You're on the list! We'll notify you when Xnor_IA launches.
                   </p>
                 </div>

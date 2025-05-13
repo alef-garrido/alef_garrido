@@ -47,7 +47,7 @@ const Ecosystem: React.FC = () => {
     {
       title: "Digital Maze",
       description: "A print-and-play game designed to bring digital concepts into the physical world.",
-      icon: <Book className="h-6 w-6 text-white" />,
+      icon: <Book className="h-6 w-6 text-black" />,
       linkText: "Download Free",
       linkHref: "#digital-maze",
       color: "bg-primary"
@@ -55,7 +55,7 @@ const Ecosystem: React.FC = () => {
     {
       title: "Dinami_CO",
       description: "Party-dinners that combine intellectual stimulation with social connection.",
-      icon: <Users className="h-6 w-6 text-white" />,
+      icon: <Users className="h-6 w-6 text-black" />,
       linkText: "Request Invitation",
       linkHref: "#dinamico",
       color: "bg-secondary"
@@ -63,7 +63,7 @@ const Ecosystem: React.FC = () => {
     {
       title: "Xnor_IA",
       description: "Print and run digital solutions for strategic technology integration.",
-      icon: <Layers className="h-6 w-6 text-white" />,
+      icon: <Layers className="h-6 w-6 text-black" />,
       linkText: "Learn More",
       linkHref: "#xnoria",
       color: "bg-hybrid-blue"
@@ -71,7 +71,7 @@ const Ecosystem: React.FC = () => {
     {
       title: "nomad_proxy",
       description: "Services designed to support your hybrid lifestyle and workflow.",
-      icon: <Grid2X2 className="h-6 w-6 text-white" />,
+      icon: <Grid2X2 className="h-6 w-6 text-black" />,
       linkText: "Explore Services",
       linkHref: "#nomad-proxy",
       color: "bg-hybrid-green"
@@ -82,8 +82,8 @@ const Ecosystem: React.FC = () => {
     <section id="ecosystem" className="p-16 bg-texture-head">
       <div className="hybrid-container">
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-12">
-          <h2 className="font-display text-3xl sm:text-4xl">Our Ecosystem</h2>
-          <p className="text-muted-foreground">
+          <h2 className="font-display text-3xl sm:text-4xl">My Service Ecosystem</h2>
+          <p className="text-black">
             Four interconnected initiatives that bring the Going Hybrid philosophy to life.
           </p>
         </div>
