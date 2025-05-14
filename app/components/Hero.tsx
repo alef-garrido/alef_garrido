@@ -11,12 +11,21 @@ const Hero: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Hero content section */}
           <div className="space-y-6 animate-fade-in">
-            {/* Header card based on the provided example */}
-            <div className="bg-accent shadow-lg p-4 mb-8">
-              <div className="w-full flex justify-center mb-4">
-                <h1 className="font-display text-4xl">Going Hybrid</h1>
-              </div>
-              
+
+
+            <div className="bg-texture-xl rounded-xl shadow-lg p-4 mb-8">
+              <h1 className="font-display text-4xl sm:text-5xl md:text-6xl leading-tight">
+                Stop Shouting at Bots. Start Connecting with Humans.
+              </h1>
+
+              <h2 className="m-4 font-display text-2xl sm:text-xl md:text-3xl leading-tight">
+                Escape the
+                <span className="text-monospace"> Digital Maze </span>
+                Going Hybrid
+              </h2>
+
+             
+
               <div className="grid place-items-center grid-cols-2">
                 <div className="flex flex-col items-center">
                   <p className="text-lg font-bold">
@@ -30,20 +39,20 @@ const Hero: React.FC = () => {
                 </div>
 
                 <div className="flex flex-col items-end justify-center">
-                  <a 
-                    href="#manifesto" 
+                  <a
+                    href="#manifesto"
                     className="text-primary text-sm underline hover:text-secondary"
                   >
                     + Our Manifesto →
                   </a>
-                  <a 
-                    href="#ecosystem" 
+                  <a
+                    href="#ecosystem"
                     className="text-primary text-sm underline hover:text-secondary"
                   >
                     Ecosystem →
                   </a>
-                  <a 
-                    href="#contact" 
+                  <a
+                    href="#contact"
                     className="text-primary text-sm underline hover:text-secondary"
                   >
                     Let&apos;s Talk →
@@ -52,12 +61,9 @@ const Hero: React.FC = () => {
               </div>
             </div>
 
-            <h1 className="font-display text-4xl sm:text-5xl md:text-6xl leading-tight">
-              Escape the 
-              <span className="text-primary"> Digital Maze.</span>
-            </h1>
 
-            <h2> Change your paradigms.</h2>
+
+            <h2 className='text-2xl font-display'> Change your paradigms.</h2>
 
             <p className="text-lg md:text-xl text-black max-w-lg">
               Going Hybrid is a philosophy, an ecosystem, and a set of tools designed to help you reclaim the value of physical interactions in our increasingly digital world.
@@ -84,7 +90,7 @@ const Hero: React.FC = () => {
             "hidden lg:block relative h-96 rounded-xl overflow-hidden border border-border",
             "bg-[url('https://images.unsplash.com/photo-1472396961693-142e6e269027?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80')]",
             "bg-cover bg-center"
-          )}/>
+          )} />
         </div>
       </div>
     </section>
