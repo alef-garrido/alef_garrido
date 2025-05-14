@@ -8,14 +8,14 @@ export default async function BlogsPage() {
       <h1 className="text-6xl">The Eject Protocol</h1>
       <div className="m-8">
         
-        <p>
-          I got tired of corporate abusive pattern.
-          I hit eject, and deployed an unexpected transformation.
-          The boss can’t be hired, you know?
+        <p className="m-4 font-mono">
+          I got tired of corporate abusive pattern.<br />
+          I hit eject, and deployed an unexpected transformation.<br />
+          The boss can’t be hired, you know?<br />
           Initialize your protocol today, I dare you.
         </p>
 
-        <a className="" href="/">← Home</a>
+        <a className="m-4" href="/">← Home</a>
       </div>
 
       {blogs.map((blog, i) => (

@@ -125,8 +125,8 @@ const Contact: React.FC = () => {
           <div className="flex items-center gap-2 text-black">
             <Mail className="w-4 h-4" />
             <span>Or email us directly at:</span>
-            <a href="mailto:contact@goinghybrid.com" className="text-primary hover:underline">
-              contact@goinghybrid.com
+            <a href="mailto:aleflemat@proton.me" className="text-primary hover:underline">
+              aleflemat@proton.me
             </a>
           </div>
         </div>

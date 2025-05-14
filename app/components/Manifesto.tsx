@@ -21,11 +21,10 @@ const Manifesto: React.FC = () => {
             <div className="prose prose-lg text-black max-w-none">
               <h3 className="font-display text-2xl mb-4">The Limitations of a Digital-Only Approach</h3>
               <p className="mb-4">
-                In our rush to digitize everything, we've lost something profound: the tactile experience, 
-                the physical connection, and the focused attention that comes from interacting with the material world.
+                In our rush to digitize everything, we've lost something profound: the ability to capitalize socially on the human-to-human connection, Everyone seems to be fading into clicks, likes and shares, missing on the physical connection (made of multiple layers of sensory processing of meaning), and the focused attention that comes from interacting with the material world. Posibilities are out there, but they are not being used.
               </p>
               <p className="mb-4">
-                Digital tools create remarkable efficiencies, but they also fragment our attention, 
+                Digital tools create remarkable efficiencies, but they also fragment our attention,   
                 isolate us from embodied experiences, and often fail to engage our full cognitive and sensory capabilities.
               </p>
               

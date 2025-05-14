@@ -84,7 +84,9 @@ const Ecosystem: React.FC = () => {
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-12">
           <h2 className="font-display text-3xl sm:text-4xl">My Service Ecosystem</h2>
           <p className="text-black">
-            Four interconnected initiatives that bring the Going Hybrid philosophy to life.
+            <b>The endless content creation. The pressure to be 'always on'.</b>
+            You're pouring your soul into the void, while the platforms profit from your exhaustion.
+            I present you with Four interconnected initiatives that bring a the bridge to your balance and growth, the core of Going Hybrid philosophy sparks into life.
           </p>
         </div>
         
