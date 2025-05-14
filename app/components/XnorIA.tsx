@@ -35,24 +35,24 @@ const XnorIA: React.FC = () => {
             <Layers className="h-8 w-8 text-hybrid-blue" />
           </div>
           <h2 className="font-display text-3xl sm:text-4xl">Xnor_IA</h2>
-          <p className="text-black">
+          <p className="font-mono text-black">
             The next evolution in our hybrid ecosystem: print and Run digital solutions for strategic technology integration.
           </p>
         </div>
         
         <Card className="max-w-md mx-auto bg-texture-y border-hybrid-blue/20">
-          <CardContent className="p-6">
+          <CardContent className="font mono p-6">
             <div className="space-y-6">
               <div>
                 <h3 className="font-display text-xl text-black mb-2">Coming Soon</h3>
-                <p className="text-sm text-black">
+                <p className="font-mono text-sm text-black">
                   Xnor_IA combines physical tools with digital intelligence to create a truly hybrid workflow.
                 </p>
               </div>
               
               <div className="space-y-2">
                 <h4 className="font-medium text-black">Key Features:</h4>
-                <ul className="space-y-1 text-black">
+                <ul className="font-monospace-y-1 text-black">
                   <li className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 rounded-full bg-hybrid-blue"></div>
                     <span>Printable templates with digital augmentation</span>
@@ -69,7 +69,7 @@ const XnorIA: React.FC = () => {
               </div>
               
               {!isSubmitted ? (
-                <form onSubmit={handleSubmit} className="space-y-4">
+                <form onSubmit={handleSubmit} className="font-mono space-y-4">
                   <div className="space-y-1">
                     <p className="text-xs text-black">Sign up for early access:</p>
                     <Input

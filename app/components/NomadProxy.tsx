@@ -16,13 +16,13 @@ const NomadProxy: React.FC = () => {
             <h2 className="font-display text-3xl">nomad_proxy</h2>
           </div>
           
-          <p className="text-black mb-8">
+          <p className="font-mono text-black mb-8">
             A suite of services designed to support your hybrid lifestyle and workflow.
             nomad_proxy helps you navigate the intersection of digital and physical worlds with ease.
           </p>
           
           <Card className="mb-8">
-            <CardContent className="p-6 sm:p-8">
+            <CardContent className="font-mono p-6 sm:p-8">
               <div className="space-y-6">
                 <div className="space-y-2">
                   <h3 className="font-display text-xl">Our Services</h3>

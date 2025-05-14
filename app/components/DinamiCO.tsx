@@ -53,14 +53,14 @@ const DinamiCO: React.FC = () => {
           
           <div className="space-y-6 order-1 lg:order-2">
             <h2 className="font-display text-3xl sm:text-4xl">Dinami_CO</h2>
-            <p className="text-black">
+            <p className="text-black font-mono">
               Curated Hybrid events that combine intellectual stimulation with genuine social connection, 
               designed to forge meaningful relationships around shared ideas.
             </p>
             
             <div className="space-y-2">
               <h3 className="font-display text-xl">What to Expect:</h3>
-              <ul className="list-disc list-inside space-y-1 text-black">
+              <ul className="font-mono list-disc list-inside space-y-1 text-black">
                 <li>Thoughtfully curated guest lists</li>
                 <li>Structured conversations on fascinating topics</li>
                 <li>Delicious meals in inspiring settings</li>
@@ -78,7 +78,7 @@ const DinamiCO: React.FC = () => {
                     </p>
                     
                     <form onSubmit={handleSubmit} className="space-y-4">
-                      <div className="space-y-3">
+                      <div className="space-y-3 font-mono">
                         <Input
                           name="name"
                           placeholder="Your name"

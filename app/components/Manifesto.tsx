@@ -17,7 +17,7 @@ const Manifesto: React.FC = () => {
         </div>
         
         <Card className="mb-8 shadow-lg">
-          <CardContent className="p-8">
+          <CardContent className="p-8 font-mono">
             <div className="prose prose-lg text-black max-w-none">
               <h3 className="font-display text-2xl mb-4">The Limitations of a Digital-Only Approach</h3>
               <p className="mb-4">

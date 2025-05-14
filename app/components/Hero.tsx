@@ -61,11 +61,9 @@ const Hero: React.FC = () => {
               </div>
             </div>
 
+            <h2 className='text-2xl font-display'> <b>Change your paradigms.</b> </h2>
 
-
-            <h2 className='text-2xl font-display'> Change your paradigms.</h2>
-
-            <p className="text-lg md:text-xl text-black max-w-lg">
+            <p className="font-mono text-lg md:text-xl text-black max-w-lg">
               Going Hybrid is a philosophy, an ecosystem, and a set of tools designed to help you reclaim the value of physical interactions in our increasingly digital world.
             </p>
 

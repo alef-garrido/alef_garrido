@@ -88,7 +88,7 @@ const Ecosystem: React.FC = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="font-mono grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {ecosystemItems.map((item) => (
             <EcosystemItem
               key={item.title}

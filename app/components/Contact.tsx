@@ -52,7 +52,7 @@ const Contact: React.FC = () => {
         <Card className="max-w-2xl mx-auto shadow-lg">
           <CardContent className="p-6 sm:p-8">
             {!isSubmitted ? (
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form onSubmit={handleSubmit} className="font-mono space-y-6">
                 <div className="space-y-4">
                   <div className="space-y-2">
                     <label htmlFor="name" className="text-sm font-medium">
