@@ -12,8 +12,8 @@ import Footer from './components/Footer';
 
 export default function Home() {
   return (
-    <>
-      <main className="max-w-[1080px] h-dvh grid place-items-center">
+    <div className="max-w-[1080px] h-dvh grid place-items-center">
+      <main className="">
 
         <div className="grid grid-cols-1 gap-2 shadow-lg">
 
@@ -49,6 +49,6 @@ export default function Home() {
 
       </main>
       <Footer />
-    </>
+    </div>
   )
 }

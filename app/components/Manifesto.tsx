@@ -21,26 +21,41 @@ const Manifesto: React.FC = () => {
             <div className="prose prose-lg text-black max-w-none">
               <h3 className="font-display text-2xl mb-4">The Limitations of a Digital-Only Approach</h3>
               <p className="mb-4">
-                In our rush to digitize everything, we've lost something profound: the ability to capitalize socially on the human-to-human connection, Everyone seems to be fading into clicks, likes and shares, missing on the physical connection (made of multiple layers of sensory processing of meaning), and the focused attention that comes from interacting with the material world. Posibilities are out there, but they are not being used.
+                In our rush to digitize everything,<br /> 
+                we've lost something profound:<br /> 
+                the ability to capitalize socially on the human-to-human connection.<br />
+                <br /> 
+                Everyone seems to be fading into clicks, 
+                likes and shares, 
+                missing on the physical reality 
+                (made of multiple layers of sensory 
+                and the processing of meaning). 
+                <br />
+                The missing potential of the focused attention that comes from interacting with the material world. 
+                
+                <br />
+                Posibilities are out there, but they are not being used.
               </p>
               <p className="mb-4">
-                Digital tools create remarkable efficiencies, but they also fragment our attention,   
-                isolate us from embodied experiences, and often fail to engage our full cognitive and sensory capabilities.
+                Digital tools create remarkable efficiencies, <br />
+                but they also fragment our attention,<br />   
+                isolate us from embodied experiences, <br />
+                and often fail to engage our full cognitive and sensory capabilities.
               </p>
               
-              <h3 className="font-display text-2xl mt-8 mb-4">The Hybrid Solution</h3>
+              <h3 className="font-display text-2xl mt-8 mb-4">Going Hybrid</h3>
               <p className="mb-4">
-                Going Hybrid isn't about rejecting technology—it's about thoughtfully integrating it with physical interactions 
+                Going Hybrid isn't about rejecting technology<br />—it's about thoughtfully integrating it with physical interactions <br />
                 to create experiences that are greater than the sum of their parts.
               </p>
               <p className="mb-8">
-                By combining the best aspects of both worlds, we can create deeper engagement, more meaningful connections, 
+                By combining the best aspects of both worlds, <br />we can create deeper engagement, more meaningful connections, <br />
                 and experiences that respect our human nature while leveraging the power of digital tools.
               </p>
               
               <div className="text-center">
                 <Button size="lg" variant="default" className="gap-2" asChild>
-                  <a href="#" onClick={(e) => e.preventDefault()}>
+                  <a href="/api/manifesto" download="going-hybrid-manifesto.pdf">
                     <Download className="w-4 h-4" />
                     Download Full Manifesto (PDF)
                   </a>
