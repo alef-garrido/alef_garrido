@@ -49,7 +49,7 @@ const Ecosystem: React.FC = () => {
       description: "A print-and-play game designed to bring digital concepts into the physical world.",
       icon: <Book className="h-6 w-6 text-black" />,
       linkText: "Download Free",
-      linkHref: "#digital-maze",
+      linkHref: "/api/download/digital-maze",
       color: "bg-primary"
     },
     {

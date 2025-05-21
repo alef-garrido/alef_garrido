@@ -26,6 +26,18 @@ const getMimeType = (filePath: string): string => {
   }
 };
 
+// Map friendly fileIds to actual files in public directory
+const PUBLIC_FILE_MAP: Record<string, { filename: string; contentType: string }> = {
+  'digital-maze': {
+    filename: 'Laberintos Digitales_Manual de usuario.pdf',
+    contentType: 'application/pdf',
+  },
+  'manifesto': {
+    filename: 'going-hybrid-manifesto.pdf',
+    contentType: 'application/pdf',
+  },
+};
+
 export async function GET(
   request: NextRequest, 
   { params }: { params: { fileId: string } }
@@ -34,6 +46,32 @@ export async function GET(
 
   if (!fileId) {
     return NextResponse.json({ error: 'File identifier is required.' }, { status: 400 });
+  }
+
+  // Check if fileId is mapped to a public file
+  if (PUBLIC_FILE_MAP[fileId]) {
+    const { filename, contentType } = PUBLIC_FILE_MAP[fileId];
+    const filePath = path.join(process.cwd(), 'public', filename);
+    try {
+      await fs.promises.access(filePath, fs.constants.R_OK);
+      const fileBuffer = await fs.promises.readFile(filePath);
+      return new NextResponse(fileBuffer, {
+        status: 200,
+        headers: {
+          'Content-Disposition': `attachment; filename="${filename}"`,
+          'Content-Type': contentType,
+          'Content-Length': fileBuffer.length.toString(),
+        },
+      });
+    } catch (error: any) {
+      if (error.code === 'ENOENT') {
+        return NextResponse.json({ error: `File not found: ${filename}` }, { status: 404 });
+      } else if (error.code === 'EACCES') {
+        return NextResponse.json({ error: `Access denied to file: ${filename}` }, { status: 403 });
+      } else {
+        return NextResponse.json({ error: 'An unexpected error occurred while trying to download the file.' }, { status: 500 });
+      }
+    }
   }
 
   const safeFilename = path.basename(fileId);
@@ -72,4 +110,4 @@ export async function GET(
       return NextResponse.json({ error: 'An unexpected error occurred while trying to download the file.' }, { status: 500 });
     }
   }
-} 
+}
