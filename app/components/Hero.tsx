@@ -51,10 +51,7 @@ const Hero: React.FC = () => {
                   >
                     Ecosystem →
                   </a>
-                  <a
-                    href="#contact"
-                    className="text-primary text-sm underline hover:text-secondary"
-                  >
+                  <a className="text-black text-sm underline hover:text-green-500" href="https://wa.me/14493123765" target="_blank">
                     Let&apos;s Talk →
                   </a>
                 </div>
