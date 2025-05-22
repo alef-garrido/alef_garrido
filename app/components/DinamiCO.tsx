@@ -6,7 +6,7 @@ import { Textarea } from "./ui/textarea";
 import { Card, CardContent } from "./ui/card";
 import { Check } from 'lucide-react';
 import { useToast } from "./ui/use-toast";
-import { cn } from "../lib/utils";
+import { cn } from "../lib/utils/utils";
 
 const DinamiCO: React.FC = () => {
   const [formData, setFormData] = useState({

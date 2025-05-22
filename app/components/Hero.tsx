@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { cn } from "../lib/utils";
+import { cn } from "../lib/utils/utils";
 import { Button } from "./ui/button";
 import { FileText, Download } from 'lucide-react';
 

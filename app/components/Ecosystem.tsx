@@ -57,7 +57,7 @@ const Ecosystem: React.FC = () => {
       description: "Hybrid events that combine intellectual stimulation with social connection.",
       icon: <Users className="h-6 w-6 text-black" />,
       linkText: "Request Invitation",
-      linkHref: "#dinamico",
+      linkHref: "/dinami_co",
       color: "bg-secondary"
     },
     {
