@@ -24,19 +24,30 @@ const Contact: React.FC = () => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
   
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate API call
-    setTimeout(() => {
-      setIsSubmitting(false);
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+      if (!res.ok) throw new Error('Failed to send message');
       setIsSubmitted(true);
       toast({
-        title: "Message Sent!",
+        title: 'Message Sent!',
         description: "We'll get back to you as soon as possible.",
       });
-    }, 1500);
+    } catch (err) {
+      toast({
+        title: 'Error',
+        description: 'There was a problem sending your message. Please try again later.',
+        variant: 'destructive',
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
