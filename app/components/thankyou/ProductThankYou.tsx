@@ -1,6 +1,7 @@
 import React from 'react';
 import { Share } from 'lucide-react';
 import { useRouter } from 'next/navigation';
+import Image from 'next/image';
 import FadeTransition from '../dinami_co/FadeTransition';
 import DinnerInvitation from './DinnerInvitation';
 
@@ -13,10 +14,12 @@ const ProductThankYou: React.FC = () => {
         <div className="max-w-2xl w-full bg-white/70 backdrop-blur-sm rounded-2xl shadow-xl p-8 md:p-12">
           {/* Header with logo */}
           <div className="w-full flex justify-center mb-8">
-            <img 
+            <Image 
               src="/lovable-uploads/a43a4d6f-abe7-453c-a09b-256d45238327.png" 
               alt="Nomad Proxy Logo" 
               className="h-12 md:h-16" 
+              width={160} height={80}
+              priority
             />
           </div>
           

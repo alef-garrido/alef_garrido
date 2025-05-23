@@ -22,7 +22,7 @@ const Manifesto: React.FC = () => {
               <h3 className="font-display text-2xl mb-4">The Limitations of a Digital-Only Approach</h3>
               <p className="mb-4">
                 In our rush to digitize everything,<br /> 
-                we've lost something profound:<br /> 
+                we&apos;ve lost something profound:<br /> 
                 the ability to capitalize socially on the human-to-human connection.<br />
                 <br /> 
                 Everyone seems to be fading into clicks, 

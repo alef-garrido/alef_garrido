@@ -1,4 +1,5 @@
 import { getBlogBySlug, getAllBlogSlug } from "../fetchers"
+import Image from "next/image";
 
 export async function generateStaticParams() {
   return getAllBlogSlug()
@@ -46,10 +47,12 @@ export default async function BlogPage({
           {/* Hero Image Placeholder */}
           {/* Replace with <img /> tag if blog.frontmatter.heroImage is available */}
           {blog.frontmatter.heroImage ? (
-            <img 
+            <Image 
               src={blog.frontmatter.heroImage} 
               alt={blog.frontmatter.title} 
               className="w-full h-64 md:h-96 object-cover rounded-md mb-6"
+              width={1200} height={384}
+              priority
             />
           ) : (
             <div className="w-full h-64 md:h-96 bg-gray-200 flex items-center justify-center rounded-md mb-6">
