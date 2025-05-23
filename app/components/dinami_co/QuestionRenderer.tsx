@@ -1,6 +1,6 @@
 import React from 'react';
 import { TextQuestion, ChoiceQuestion, OtherChoiceQuestion } from './QuestionTypes';
-import { QuizQuestion } from '../../_context/QuizContext';
+import { QuizQuestion } from '../../types/quiz';
 
 interface QuestionRendererProps {
   question: QuizQuestion;
@@ -53,7 +53,7 @@ const QuestionRenderer: React.FC<QuestionRendererProps> = ({
           }}
           value={currentAnswer}
           isRequired={question.isRequired}
-          error={attemptedNext && validationError}
+          error={attemptedNext && validationError ? validationError : undefined}
         />
       );
     
@@ -76,7 +76,7 @@ const QuestionRenderer: React.FC<QuestionRendererProps> = ({
               handleAnswer(question.id, 'other', value);
             }
           }}
-          error={attemptedNext && validationError}
+          error={attemptedNext && validationError ? validationError : undefined}
           onKeyDown={handleKeyDown}
         />
       );
