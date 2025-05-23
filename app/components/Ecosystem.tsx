@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "./ui/card";
 import { Book, Users, Layers, Grid2X2 } from 'lucide-react';
@@ -35,7 +34,12 @@ const EcosystemItem: React.FC<EcosystemItemProps> = ({
       </CardContent>
       <CardFooter>
         <Button variant="outline" asChild>
-          <a href={linkHref}>{linkText}</a>
+          <a
+            className="transition-colors duration-200 hover:text-yellow-500 hover:animate-pulse"
+            href={linkHref}
+          >
+            {linkText}
+          </a>
         </Button>
       </CardFooter>
     </Card>

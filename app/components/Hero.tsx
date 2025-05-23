@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { cn } from "../lib/utils/utils";
 import { Button } from "./ui/button";
@@ -43,17 +42,21 @@ const Hero: React.FC = () => {
                 <div className="flex flex-col items-end justify-center">
                   <a
                     href="#manifesto"
-                    className="text-primary text-sm underline hover:text-secondary"
+                    className="text-primary text-sm underline transition-colors duration-200 hover:text-blue-500 hover:animate-pulse"
                   >
                     + Our Manifesto →
                   </a>
                   <a
                     href="#ecosystem"
-                    className="text-primary text-sm underline hover:text-secondary"
+                    className="text-primary text-sm underline transition-colors duration-200 hover:text-yellow-500 hover:animate-pulse"
                   >
                     Ecosystem →
                   </a>
-                  <a className="text-black text-sm underline hover:text-green-500" href="https://wa.me/14493123765" target="_blank">
+                  <a
+                    className="text-black text-sm underline transition-colors duration-200 hover:text-orange-500 hover:animate-pulse"
+                    href="https://wa.me/14493123765"
+                    target="_blank"
+                  >
                     Let&apos;s Talk →
                   </a>
                 </div>
@@ -69,13 +72,13 @@ const Hero: React.FC = () => {
 
               <div className="my-2 flex flex-col sm:flex-row gap-4 pt-4">
                 <Button size="lg" className="gap-2" asChild>
-                  <a href="#manifesto hover:text-blue-500">
+                  <a href="#manifesto" className="transition-colors duration-200 hover:text-blue-500 hover:animate-pulse">
                     <FileText className="w-4 h-4" />
                     Read Manifesto
                   </a>
                 </Button>
                 <Button variant="outline" size="lg" className="gap-2" asChild>
-                  <a href="/api/download/digital-maze">
+                  <a href="/api/download/digital-maze" className="transition-colors duration-200 hover:text-yellow-500 hover:animate-pulse">
                     <Download className="w-4 h-4" />
                     Get Digital Maze
                   </a>

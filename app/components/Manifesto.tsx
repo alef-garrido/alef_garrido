@@ -55,7 +55,10 @@ const Manifesto: React.FC = () => {
               
               <div className="text-center">
                 <Button size="lg" variant="default" className="gap-2" asChild>
-                  <a href="/api/manifesto" download="going-hybrid-manifesto.pdf">
+                  <a
+                    className="transition-colors duration-200 hover:text-blue-500 hover:animate-pulse"
+                    href="/api/manifesto" download="going-hybrid-manifesto.pdf"
+                  >
                     <Download className="w-4 h-4" />
                     Download Full Manifesto (PDF)
                   </a>
