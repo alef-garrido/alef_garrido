@@ -13,13 +13,14 @@ const Footer: React.FC = () => {
 
       <div className="grid grid-cols-1 place-items-center md:grid-cols-3 gap-8">
 
-        <div>
-          <div className="w-full flex justify-center">
+        <div className='border border-white p-8'>
+          <div className="flex justify-left m-2 ">
             <Image
               src={BrandLogo.src}
               alt="Company"
-              width={100}
-              height={100}
+              width={70}
+              height={70}
+              className='border border-white'
             />
           </div>
 
@@ -49,7 +50,7 @@ const Footer: React.FC = () => {
             </div>
 
           </div>
-
+          <hr className="border-t border-gray-300 mb-4" />
           <h3 className="font-display text-xl">Going Hybrid</h3>
           <p className="text-sm text-black">
             Don't Preach, nor teach.<br />
@@ -58,7 +59,7 @@ const Footer: React.FC = () => {
 
         </div>
 
-        <div className="space-y-4">
+        <div className=" space-y-4">
           <h4 className="font-medium mb-2">Quick Links</h4>
           <ul className="space-y-2 text-sm">
             <li>
@@ -92,7 +93,7 @@ const Footer: React.FC = () => {
         <div className="space-y-4">
           <h4 className="font-medium mb-2">Connect With Us</h4>
           <a
-            href="https://instagram.com"
+            href="https://instagram.com/alef_lemat"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 text-black hover:text-primary transition-colors"

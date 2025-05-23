@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
         <BackgroundImage
-          src="/bg-texture-footer.svg"
+          src="/bg-texture-blue-Y.png"
           alt="Background texture"
           className="w-full p-8 shadow-lg row-span-2"
         >

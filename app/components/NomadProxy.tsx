@@ -6,7 +6,7 @@ import { Grid2X2, ArrowRight } from 'lucide-react';
 
 const NomadProxy: React.FC = () => {
   return (
-    <section id="nomad-proxy" className="p-16 bg-texture-xl bg-center bg-cover bg-no-repeat">
+    <section id="nomad-proxy" className="my-4 p-16 bg-texture-xl bg-center bg-cover bg-no-repeat">
       <div className=" ">
         <div className="max-w-3xl mx-auto space-y-4">
           <div className="flex items-center gap-3 mb-4">
@@ -61,11 +61,10 @@ const NomadProxy: React.FC = () => {
                   </div>
                 </div>
 
-                <div className="pt-4">
-                  <Button className="gap-2 bg-hybrid-green hover:bg-hybrid-green/90">
+                <div className="pt-4 ">
+                  <Button className="flex gap-2 bg-hybrid-green hover:bg-hybrid-green/90">
                     <a href="https://nomad-proxy.vercel.app/">
-                      Visit the website to Learn More About Services
-                      <ArrowRight className="w-4 h-4" />
+                      Visit the website to Learn More About Services →
                     </ a>
                   </Button>
                 </div>
