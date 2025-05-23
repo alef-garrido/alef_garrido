@@ -3,10 +3,12 @@ import React from 'react';
 import { cn } from "../lib/utils/utils";
 import { Button } from "./ui/button";
 import { FileText, Download } from 'lucide-react';
+import BackgroundImage from "./ui/background-image";
+import BlurImage from "./ui/blur-image";
 
 const Hero: React.FC = () => {
   return (
-    <section id="hero" className="bg-texture-y p-16 md:py-24">
+    <section id="nomad-proxy" className="p-16 bg-texture-xl">
       <div className=" ">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Hero content section */}
@@ -72,7 +74,7 @@ const Hero: React.FC = () => {
                 </a>
               </Button>
               <Button variant="outline" size="lg" className="gap-2" asChild>
-                <a href="#download">
+                <a href="/api/download/digital-maze">
                   <Download className="w-4 h-4" />
                   Get Digital Maze
                 </a>

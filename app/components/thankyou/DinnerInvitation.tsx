@@ -85,7 +85,7 @@ const DinnerInvitation: React.FC<DinnerInvitationProps> = ({ profileType, onRese
   };
   
   const handleConfirmReservation = () => {
-    if (date && onReservation) {
+    if (date && typeof onReservation === 'function') {
       onReservation(date);
     }
     setShowThankYou(true);

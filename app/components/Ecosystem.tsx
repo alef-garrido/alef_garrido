@@ -73,13 +73,13 @@ const Ecosystem: React.FC = () => {
       description: "Services designed to support your hybrid lifestyle and workflow.",
       icon: <Grid2X2 className="h-6 w-6 text-black" />,
       linkText: "Explore Services",
-      linkHref: "#nomad-proxy",
+      linkHref: "https://nomad-proxy.vercel.app/",
       color: "bg-hybrid-green"
     }
   ];
 
   return (
-    <section id="ecosystem" className="p-16 bg-texture-head">
+    <section id="ecosystem" className="p-16 bg-blue-500 text-black">
       <div className=" ">
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-12">
           <h2 className="font-display text-3xl sm:text-4xl">My Service Ecosystem</h2>

@@ -1,4 +1,3 @@
-
 export type Json =
   | string
   | number
@@ -63,6 +62,24 @@ export interface Database {
           contacted?: boolean
         }
         Relationships: []
+      }
+      early_access: {
+        Row: {
+          id: string;
+          email: string;
+          created_at: string;
+        };
+        Insert: {
+          id?: string;
+          email: string;
+          created_at?: string;
+        };
+        Update: {
+          id?: string;
+          email?: string;
+          created_at?: string;
+        };
+        Relationships: [];
       }
     }
     Views: {

@@ -42,7 +42,7 @@ const DinamiCO: React.FC = () => {
   };
 
   return (
-    <section id="dinamico" className="p-16 bg-texture-head">
+    <section id="dinamico" className="p-16 bg-texture-xl bg-cover bg-center">
       <div className=" ">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className={cn(

@@ -15,12 +15,12 @@ const NomadProxy: React.FC = () => {
             </div>
             <h2 className="font-display text-3xl">nomad_proxy</h2>
           </div>
-          
+
           <p className="font-mono text-black mb-8">
             A suite of services designed to support your hybrid lifestyle and workflow.
             nomad_proxy helps you navigate the intersection of digital and physical worlds with ease.
           </p>
-          
+
           <Card className="mb-8">
             <CardContent className="font-mono p-6 sm:p-8">
               <div className="space-y-6">
@@ -30,7 +30,7 @@ const NomadProxy: React.FC = () => {
                     nomad_proxy helps bridge the gap between digital efficiency and physical presence.
                   </p>
                 </div>
-                
+
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div className="p-4 border rounded-md">
                     <h4 className="font-medium mb-2">Physical Mail Handling</h4>
@@ -38,21 +38,21 @@ const NomadProxy: React.FC = () => {
                       We receive, scan, and forward your mail to wherever you are.
                     </p>
                   </div>
-                  
+
                   <div className="p-4 border rounded-md">
                     <h4 className="font-medium mb-2">Hybrid Workspace Solutions</h4>
                     <p className="text-sm text-black">
                       Physical and digital workspaces that adapt to your needs.
                     </p>
                   </div>
-                  
+
                   <div className="p-4 border rounded-md">
                     <h4 className="font-medium mb-2">Document Processing</h4>
                     <p className="text-sm text-black">
                       Converting between physical and digital documents seamlessly.
                     </p>
                   </div>
-                  
+
                   <div className="p-4 border rounded-md">
                     <h4 className="font-medium mb-2">Hybrid Event Support</h4>
                     <p className="text-sm text-black">
@@ -60,11 +60,13 @@ const NomadProxy: React.FC = () => {
                     </p>
                   </div>
                 </div>
-                
+
                 <div className="pt-4">
                   <Button className="gap-2 bg-hybrid-green hover:bg-hybrid-green/90">
-                    Learn More About Services
-                    <ArrowRight className="w-4 h-4" />
+                    <a href="https://nomad-proxy.vercel.app/">
+                      Visit the website to Learn More About Services
+                      <ArrowRight className="w-4 h-4" />
+                    </ a>
                   </Button>
                 </div>
               </div>
