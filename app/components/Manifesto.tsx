@@ -7,7 +7,7 @@ import { Card, CardContent } from "./ui/card";
 
 const Manifesto: React.FC = () => {
   return (
-    <section id="manifesto" className="p-4 md:p-16 bg-accent bg-texture-xl">
+    <section id="manifesto" className=" p-8 md:p-16 bg-accent bg-texture-xl bg-center bg-cover bg-no-repeat">
       <div className=" ">
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-12">
           <h2 className="font-display text-3xl sm:text-4xl">The Going Hybrid Manifesto</h2>

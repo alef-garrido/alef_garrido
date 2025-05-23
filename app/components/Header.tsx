@@ -4,7 +4,7 @@ import { cn } from "../lib/utils/utils";
 
 const Header: React.FC = () => {
   return (
-    <header className="py-6 border-b border-border">
+    <header className="py-6 border-b border-border bg-texture-head bg-cover bg-center">
       <div className="font-mono flex justify-between items-center">
         <div>
           <h1 className="text-2xl sm:text-3xl font-display">Going Hybrid</h1>

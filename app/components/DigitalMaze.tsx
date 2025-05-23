@@ -28,7 +28,7 @@ const DigitalMaze: React.FC = () => {
   };
 
   return (
-    <section id="digital-maze" className="p-16 bg-texture-head">
+    <section id="digital-maze" className="p-16 bg-texture-head bg-center bg-cover bg-no-repeat" >
       <div className=" ">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">

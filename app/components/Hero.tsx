@@ -8,14 +8,14 @@ import BlurImage from "./ui/blur-image";
 
 const Hero: React.FC = () => {
   return (
-    <section id="nomad-proxy" className="p-16 bg-texture-xl">
+    <section id="nomad-proxy" className="my-4 p-16 bg-texture-xl bg-white bg-center">
       <div className=" ">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Hero content section */}
           <div className="space-y-6 animate-fade-in">
 
 
-            <div className="bg-texture-xl rounded-xl shadow-lg p-4 mb-8">
+            <div className="bg-white rounded-xl shadow-lg p-4 mb-8">
               <h1 className="font-display text-4xl sm:text-5xl md:text-6xl leading-tight">
                 Stop Shouting at Bots. Start Connecting with Humans.
               </h1>
@@ -26,7 +26,7 @@ const Hero: React.FC = () => {
                 Going Hybrid
               </h2>
 
-             
+
 
               <div className="grid place-items-center grid-cols-2">
                 <div className="flex flex-col items-center">
@@ -60,25 +60,27 @@ const Hero: React.FC = () => {
               </div>
             </div>
 
-            <h2 className='text-2xl font-display'> <b>Change your paradigms.</b> </h2>
+            <div className='m-8 pt-8'>
+              <h2 className='my-2 text-2xl font-display'> <b>Change your paradigms.</b> </h2>
 
-            <p className="font-mono text-lg md:text-xl text-black max-w-lg">
-              Going Hybrid is a philosophy, an ecosystem, and a set of tools designed to help you reclaim the value of physical interactions in our increasingly digital world.
-            </p>
+              <p className="font-mono text-lg md:text-xl text-black max-w-lg">
+                Going Hybrid is a philosophy, <br  /> brand, ecosystem, <br  />and a set of tools designed to help you reclaim the value of physical interactions in our increasingly digital world.
+              </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Button size="lg" className="gap-2" asChild>
-                <a href="#manifesto">
-                  <FileText className="w-4 h-4" />
-                  Read Manifesto
-                </a>
-              </Button>
-              <Button variant="outline" size="lg" className="gap-2" asChild>
-                <a href="/api/download/digital-maze">
-                  <Download className="w-4 h-4" />
-                  Get Digital Maze
-                </a>
-              </Button>
+              <div className="my-2 flex flex-col sm:flex-row gap-4 pt-4">
+                <Button size="lg" className="gap-2" asChild>
+                  <a href="#manifesto hover:text-blue-500">
+                    <FileText className="w-4 h-4" />
+                    Read Manifesto
+                  </a>
+                </Button>
+                <Button variant="outline" size="lg" className="gap-2" asChild>
+                  <a href="/api/download/digital-maze">
+                    <Download className="w-4 h-4" />
+                    Get Digital Maze
+                  </a>
+                </Button>
+              </div>
             </div>
           </div>
 

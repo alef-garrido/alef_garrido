@@ -23,32 +23,32 @@ const Footer: React.FC = () => {
             />
           </div>
 
-        <div className="mb-4 grid grid-cols-2 ">
+          <div className="mb-4 grid grid-cols-2 ">
 
-          <div className=''>
-            <p className="text-lg">
-              <b>Alef Lemat</b>
-            </p>
-            <p className="text-xs font-light">Business <br /> Implementation.<br /> Tech Assitance</p>
+            <div className=''>
+              <p className="text-lg">
+                <b>Alef Lemat</b>
+              </p>
+              <p className="text-xs font-light">Business <br /> Implementation.<br /> Tech Assitance</p>
+            </div>
+
+            <div className="flex flex-col items-end justify-center">
+              <Link
+                href={"about"}
+                className="text-blue-500 text-sm underline hover:text-green-500"
+              >
+                + Sobre mi →
+              </Link>
+              <Link href={"blogs"} className="text-blue-500 text-sm underline hover:text-green-500">
+                Mi blog →
+              </Link>
+              <a className="text-blue-500 text-sm underline hover:text-green-500" href="https://wa.me/14493123765" target="_blank">
+                Let&apos;s Talk →
+              </a>
+
+            </div>
+
           </div>
-          
-          <div className="flex flex-col items-end justify-center">
-          <Link
-            href={"about"}
-            className="text-blue-500 text-sm underline hover:text-green-500"
-          >
-            + Sobre mi →
-          </Link>
-          <Link href={"blogs"} className="text-blue-500 text-sm underline hover:text-green-500">
-            Mi blog →
-          </Link>
-          <a className="text-blue-500 text-sm underline hover:text-green-500" href="https://wa.me/14493123765" target="_blank">
-            Let&apos;s Talk →
-          </a>
-
-          </div>
-
-        </div>
 
           <h3 className="font-display text-xl">Going Hybrid</h3>
           <p className="text-sm text-black">
@@ -110,10 +110,6 @@ const Footer: React.FC = () => {
 
       </div>
 
-      <section className="grid grid-rows-2 place-items-center">
-
-
-      </section>
 
 
     </footer>

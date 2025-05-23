@@ -6,7 +6,7 @@ import { Grid2X2, ArrowRight } from 'lucide-react';
 
 const NomadProxy: React.FC = () => {
   return (
-    <section id="nomad-proxy" className="p-16 bg-texture-xl">
+    <section id="nomad-proxy" className="p-16 bg-texture-xl bg-center bg-cover bg-no-repeat">
       <div className=" ">
         <div className="max-w-3xl mx-auto space-y-4">
           <div className="flex items-center gap-3 mb-4">
