@@ -110,7 +110,7 @@ const XnorIA: React.FC = () => {
                       <Check className="h-6 w-6 text-hybrid-blue" />
                     </div>
                     <p className="text-sm text-black">
-                      You're on the list! We'll notify you when Xnor_IA launches.
+                      You&apos;re on the list! We&apos;ll notify you when Xnor_IA launches.
                     </p>
                   </div>
                 )}

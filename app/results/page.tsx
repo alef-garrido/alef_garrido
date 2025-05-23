@@ -5,6 +5,7 @@ import ResultsComponent from '../components/dinami_co/Results';
 import MixInfoDialog from '../components/dinami_co/MixInfoDialog';
 import { useQuiz } from '../_context/QuizContext';
 import { calculateProfileType } from '../lib/utils/quizUtils';
+import Image from 'next/image';
 
 const Results = () => {
   const { isEmailSubmitted, answers, email } = useQuiz();
@@ -31,10 +32,13 @@ const Results = () => {
     <div className="min-h-screen bg-gradient-to-b from-white to-quiz-secondary/30">
       {/* Add logo at top */}
       <div className="w-full flex justify-center pt-8">
-        <img 
+        <Image 
           src="/lovable-uploads/a43a4d6f-abe7-453c-a09b-256d45238327.png" 
           alt="Nomad Proxy Logo" 
           className="h-12 md:h-16" 
+          width={120} 
+          height={48}
+          priority
         />
       </div>
       <ResultsComponent />

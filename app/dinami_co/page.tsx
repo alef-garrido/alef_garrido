@@ -4,6 +4,7 @@ import { ArrowRight, AlertTriangle, Clock } from 'lucide-react';
 import FadeTransition from '../components/dinami_co/FadeTransition';
 import { useQuiz } from '../_context/QuizContext';
 import { useRouter } from 'next/navigation';
+import Image from 'next/image';
 
 const LandingPage: React.FC = () => {
   const { email, setEmail, submitEmail } = useQuiz();
@@ -43,10 +44,12 @@ const LandingPage: React.FC = () => {
           {/* Logo */}
           <FadeTransition show={true} delay={0}>
             <div className="w-full flex justify-center mb-4">
-              <img 
+              <Image 
                 src="/lovable-uploads/a43a4d6f-abe7-453c-a09b-256d45238327.png" 
                 alt="Nomad Proxy Logo" 
                 className="h-16 md:h-20" 
+                width={160} height={80}
+                priority
               />
             </div>
           </FadeTransition>
@@ -183,10 +186,12 @@ const LandingPage: React.FC = () => {
             "Tu negocio no debería ser un reflejo de ti, sino un sistema que funcione independientemente."
           </p>
           <div className="mt-6 flex justify-center">
-            <img 
+            <Image 
               src="/lovable-uploads/a43a4d6f-abe7-453c-a09b-256d45238327.png" 
               alt="Nomad Proxy Logo" 
               className="h-8" 
+              width={80} height={40}
+              priority
             />
           </div>
         </div>

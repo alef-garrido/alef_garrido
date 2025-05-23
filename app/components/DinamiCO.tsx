@@ -125,7 +125,7 @@ const DinamiCO: React.FC = () => {
                     </div>
                     <h3 className="font-display text-xl">Request Received</h3>
                     <p className="text-black mb-4">
-                      Thank you for your interest! We'll review your request and be in touch soon.
+                      Thank you for your interest! We&apos;ll review your request and be in touch soon.
                     </p>
                   </div>
                 )}

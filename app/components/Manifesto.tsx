@@ -45,7 +45,7 @@ const Manifesto: React.FC = () => {
               
               <h3 className="font-display text-2xl mt-8 mb-4">Going Hybrid</h3>
               <p className="mb-4">
-                Going Hybrid isn't about rejecting technology<br />—it's about thoughtfully integrating it with physical interactions <br />
+                Going Hybrid isn&apos;t about rejecting technology<br />—it&apos;s about thoughtfully integrating it with physical interactions <br />
                 to create experiences that are greater than the sum of their parts.
               </p>
               <p className="mb-8">

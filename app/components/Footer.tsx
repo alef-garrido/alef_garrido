@@ -52,7 +52,7 @@ const Footer: React.FC = () => {
           <hr className="border-t border-gray-300 mb-4" />
           <h3 className="font-display text-xl">Going Hybrid</h3>
           <p className="text-sm text-black">
-            Don't Preach, nor teach.<br />
+            Don&apos;t Preach, nor teach.<br />
             Enable yourself to get into action, fast.
           </p>
 
