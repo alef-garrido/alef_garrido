@@ -10,10 +10,7 @@ export function LoadingOverlay() {
         position: "fixed",
         inset: 0,
         zIndex: 9999,
-        backgroundImage: `url('/bg-texture-xl.png')`,
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center',
+        background: "#ffffff", // solid dark color
         transition: "opacity 0.4s",
         opacity: 1,
         pointerEvents: "auto",
