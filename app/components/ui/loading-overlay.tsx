@@ -10,7 +10,10 @@ export function LoadingOverlay() {
         position: "fixed",
         inset: 0,
         zIndex: 9999,
-        background: "#18181b", // solid dark color
+        backgroundImage: `url('/bg-texture-xl.png')`,
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
         transition: "opacity 0.4s",
         opacity: 1,
         pointerEvents: "auto",
@@ -19,13 +22,18 @@ export function LoadingOverlay() {
         justifyContent: "center",
       }}
     >
-      <div className="spinner-buzz" style={{
-        width: 64,
-        height: 64,
-        border: "6px solid rgba(255,255,255,0.2)",
-        borderTop: "6px solid #fff",
-        borderRadius: "50%",
-      }} />
+      <div className="flex flex-col items-center gap-4">
+        <img 
+          src="/MD_Logo_861x163.png" 
+          alt="MD Logo" 
+          className="w-32 h-auto object-contain mb-4"
+        />
+        <div className="flex items-center gap-2">
+          <div className="w-4 h-4 bg-red-500 rounded-full"></div>
+          <div className="w-4 h-4 bg-red-500 rounded-full animate-ping"></div>
+          <div className="w-4 h-4 bg-red-500 rounded-full animate-pulse"></div>
+        </div>
+      </div>
       <style>{`
         @keyframes spin {
           0% { transform: rotate(0deg); }
