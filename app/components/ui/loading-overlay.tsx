@@ -1,5 +1,6 @@
 "use client";
 import { useLoading } from "@/app/_context/LoadingContext";
+import Image from "next/image";
 
 export function LoadingOverlay() {
   const { showLoading } = useLoading();
@@ -20,8 +21,10 @@ export function LoadingOverlay() {
       }}
     >
       <div className="flex flex-col items-center gap-4">
-        <img 
+        <Image 
           src="/MD_Logo_861x163.png" 
+          width={861}
+          height={163}
           alt="MD Logo" 
           className="w-32 h-auto object-contain mb-4"
         />
