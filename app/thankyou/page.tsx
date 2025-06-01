@@ -6,7 +6,7 @@ import ProductThankYou from '../components/thankyou/ProductThankYou';
 import OperationsThankYou from '../components/thankyou/OperationsThankYou';
 import { Loader2 } from 'lucide-react';
 
-const ThankYou: React.FC = () => {
+const ThankYouContent = () => {
   const searchParams = useSearchParams();
   const router = useRouter();
   const [loading, setLoading] = useState(true);
@@ -29,7 +29,8 @@ const ThankYou: React.FC = () => {
 
   if (loading) {
     return (
-      <div className="min-h-screen flex items-center justify-center">
+      <div className="flex items-center justify-center min-h-screen">
+        <Loader2 className="h-8 w-8 animate-spin" />
         <div className="flex flex-col items-center">
           <Loader2 className="h-10 w-10 animate-spin text-quiz-accent mb-4" />
           <p className="text-quiz-subtle">Preparando tu página personalizada...</p>
@@ -50,6 +51,22 @@ const ThankYou: React.FC = () => {
       // Fallback to Leadership thank you as default
       return <LeadershipThankYou />;
   }
+};
+
+const ThankYou = () => {
+  return (
+    <React.Suspense fallback={
+      <div className="flex items-center justify-center min-h-screen">
+        <Loader2 className="h-8 w-8 animate-spin" />
+        <div className="flex flex-col items-center">
+          <Loader2 className="h-10 w-10 animate-spin text-quiz-accent mb-4" />
+          <p className="text-quiz-subtle">Preparando tu página personalizada...</p>
+        </div>
+      </div>
+    }>
+      <ThankYouContent />
+    </React.Suspense>
+  );
 };
 
 export default ThankYou;
