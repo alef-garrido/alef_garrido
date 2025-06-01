@@ -1,3 +1,4 @@
+@import 'react-day-picker/dist/style.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,13 +6,47 @@
 .bg-square {
     background-image: radial-gradient(#444cf7 1px, #e5e5f7 1px);
     background-size: 20px 20px;
-  }
+}
   
 .bg-texture {
   background-image: url('../public/bg-texture.png');
   background-size: cover;
   background-repeat: no-repeat;
-}  
+}
+
+.loading-skeleton {
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(229 231 235);
+}
+
+.loading-skeleton::after {
+  position: absolute;
+  inset: 0;
+  content: '';
+  animation: shimmer 1.5s infinite;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.4) 50%,
+    transparent 100%
+  );
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.page-loading {
+  pointer-events: none;
+  user-select: none;
+  opacity: 0.5;
+}
 
 .bg-texture-xl {
   background-image: url('../public/bg-texture-xl.png');
@@ -71,4 +106,35 @@
   text-align: center;
   color: white; /* Adjust text color as needed */
   background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+}
+
+@layer utilities {
+  .loading-skeleton {
+    @apply relative overflow-hidden bg-gray-200;
+  }
+
+  .loading-skeleton::after {
+    @apply absolute inset-0;
+    content: '';
+    animation: shimmer 1.5s infinite;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(255, 255, 255, 0.4) 50%,
+      transparent 100%
+    );
+  }
+
+  @keyframes shimmer {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+  .page-loading {
+    @apply pointer-events-none select-none opacity-50;
+  }
 }
