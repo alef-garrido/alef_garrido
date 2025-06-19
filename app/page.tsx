@@ -26,7 +26,7 @@ export default function Home() {
               // Using width and height props for better performance
               src="/a_lemat_logo.png"
               alt="MD Logo"
-              className="w-32 h-auto object-contain mb-4 drop-shadow-lg transition-all duration-500 ease-in-out"
+              className="w-56 h-auto object-contain mb-4 drop-shadow-lg transition-all duration-500 ease-in-out"
             />
           </div>
           <div className="px-4 flex items-center gap-4">
