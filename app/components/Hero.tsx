@@ -14,12 +14,12 @@ const Hero: React.FC = () => {
           <div className="space-y-6 animate-fade-in">
 
 
-            <div className="bg-white rounded-xl shadow-lg p-4 mb-8">
-              <h1 className="font-display text-4xl sm:text-5xl md:text-6xl leading-tight">
-                Stop Shouting at Bots. Start Connecting with Humans.
+            <div className="bg-texture-head rounded-xl shadow-lg p-8 mb-8">
+              <h1 className="pv-2 font-display text-4xl sm:text-4xl md:text-6xl leading-tight">
+                Stop Shouting at Bots, <br /> Start Connecting with actual HUMANS.
               </h1>
 
-              <h2 className="m-4 font-display text-2xl sm:text-xl md:text-3xl leading-tight">
+              <h2 className="my-8 font-mono text-2xl sm:text-2xl md:text-3xl leading-tight">
                 Escape the
                 <span className="text-monospace"> Digital Maze </span>
                 Going Hybrid
@@ -27,8 +27,10 @@ const Hero: React.FC = () => {
 
 
 
-              <div className="grid place-items-center grid-cols-2">
+              <div className="py-8 grid place-items-center grid-cols-2">
+                
                 <div className="flex flex-col items-center">
+
                   <p className="text-lg font-bold">
                     Digital & Physical
                   </p>
@@ -37,6 +39,7 @@ const Hero: React.FC = () => {
                     with meaningful<br />
                     human interactions
                   </p>
+
                 </div>
 
                 <div className="flex flex-col items-end justify-center">
@@ -77,22 +80,30 @@ const Hero: React.FC = () => {
                     Read Manifesto
                   </a>
                 </Button>
+
                 <Button variant="outline" size="lg" className="gap-2" asChild>
                   <a href="/api/download/digital-maze" className="transition-colors duration-200 hover:text-yellow-500 hover:animate-pulse">
                     <Download className="w-4 h-4" />
                     Get Digital Maze
                   </a>
                 </Button>
+
               </div>
             </div>
           </div>
 
+
           {/* Hero image section */}
-          <div className={cn(
-            "hidden lg:block relative h-96 rounded-xl overflow-hidden border border-border",
-            "bg-[url('https://images.unsplash.com/photo-1472396961693-142e6e269027?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80')]",
-            "bg-cover bg-center"
-          )} />
+
+          <div
+
+            className={cn(
+              "hidden lg:block relative h-96 rounded-xl overflow-hidden border border-border bg-cover bg-center"
+            )}
+            style={{ backgroundImage: "url('/-texturebg-blue-Y.png')" }}
+
+          />
+
         </div>
       </div>
     </section>

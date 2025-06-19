@@ -1,35 +1,51 @@
 "use client";
 import { useLoading } from "@/app/_context/LoadingContext";
 import Image from "next/image";
+import React, { useEffect, useState } from "react";
 
 export function LoadingOverlay() {
   const { showLoading } = useLoading();
+  const [visible, setVisible] = useState(showLoading);
 
-  return showLoading ? (
+  useEffect(() => {
+    let timeout: NodeJS.Timeout;
+    if (showLoading) {
+      setVisible(true);
+    } else {
+      timeout = setTimeout(() => setVisible(false), 600); // match transition duration
+    }
+    return () => clearTimeout(timeout);
+  }, [showLoading]);
+
+  if (!visible) return null;
+
+  return (
     <div
       style={{
         position: "fixed",
         inset: 0,
         zIndex: 9999,
-        background: "#ffffff", // solid dark color
-        transition: "opacity 0.4s",
-        opacity: 1,
-        pointerEvents: "auto",
+        background: 'url("/bg-texture-header.svg") center center / cover no-repeat',
+        transition: "opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1)", // softer transition
+        opacity: showLoading ? 1 : 0,
+        pointerEvents: showLoading ? "auto" : "none",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
+        backdropFilter: "blur(4px)", // subtle blur for softness
+        WebkitBackdropFilter: "blur(4px)",
       }}
     >
-      <div className="flex flex-col items-center gap-4">
-        <Image 
-          src="/MD_Logo_861x163.png" 
+      <div className="flex flex-col items-center gap-4 transition-all duration-500 ease-in-out">
+        <Image
+          src="/a_lemat_logo.png"
           width={861}
           height={163}
-          alt="MD Logo" 
-          className="w-32 h-auto object-contain mb-4"
+          alt="MD Logo"
+          className="w-32 h-auto object-contain mb-4 drop-shadow-lg transition-all duration-500 ease-in-out"
         />
         <div className="flex items-center gap-2">
-          <div className="w-4 h-4 bg-red-500 rounded-full"></div>
+          <div className="w-4 h-4 bg-red-500 rounded-full transition-all duration-500 ease-in-out"></div>
           <div className="w-4 h-4 bg-red-500 rounded-full animate-ping"></div>
           <div className="w-4 h-4 bg-red-500 rounded-full animate-pulse"></div>
         </div>
@@ -54,5 +70,5 @@ export function LoadingOverlay() {
         }
       `}</style>
     </div>
-  ) : null;
+  );
 }
