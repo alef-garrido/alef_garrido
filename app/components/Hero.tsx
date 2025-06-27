@@ -15,7 +15,7 @@ const Hero: React.FC = () => {
 
 
             <div className="bg-texture-head rounded-xl shadow-lg p-8 mb-8">
-              <h1 className="pv-2 font-display text-4xl sm:text-4xl md:text-6xl leading-tight">
+              <h1 className="pv-2 font-display sm:text-4xl md:text-4xl leading-tight">
                 Stop Shouting at Bots, <br /> Start Connecting with actual HUMANS.
               </h1>
 

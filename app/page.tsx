@@ -1,3 +1,4 @@
+'use client';
 import Image from "next/image";
 import Hero from './components/Hero';
 import Manifesto from './components/Manifesto';
@@ -8,8 +9,28 @@ import XnorIA from './components/XnorIA';
 import NomadProxy from './components/NomadProxy';
 import Footer from './components/Footer';
 import BackgroundImage from './components/ui/background-image';
+import React, { useState, useEffect, useRef } from 'react';
 
 export default function Home() {
+  // Slideshow logic
+  const slides = [
+    <Hero key="hero" />, <Manifesto key="manifesto" />, <Ecosystem key="ecosystem" />,
+    <DigitalMaze key="digitalmaze" />, <DinamiCO key="dinamico" />, <XnorIA key="xnoria" />, <NomadProxy key="nomadproxy" />
+  ];
+  const [current, setCurrent] = useState(0);
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+
+  const nextSlide = () => setCurrent((prev) => (prev + 1) % slides.length);
+  const prevSlide = () => setCurrent((prev) => (prev - 1 + slides.length) % slides.length);
+
+  useEffect(() => {
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    timeoutRef.current = setTimeout(nextSlide, 4000); // auto-slide every 4s
+    return () => {
+      if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    };
+  }, [current]);
+
   return (
     <>
       <BackgroundImage
@@ -50,19 +71,45 @@ export default function Home() {
           </ul>
         </div>
       </BackgroundImage>
-      <div className="grid grid-cols-1 gap-2 shadow-lg">
-
-
-        <Hero />
-        <Manifesto />
-        <Ecosystem />
-        <DigitalMaze />
-        <DinamiCO />
-        <XnorIA />
-        <NomadProxy />
+      <div id='slide' className="relative w-full mx-auto overflow-hidden shadow-lg">
+        <div className="relative w-full min-w-[1050px] h-full min-h-[1050px]">
+          {slides.map((Slide, idx) => (
+            <div
+              key={idx}
+              className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${idx === current ? 'opacity-100 z-10' : 'opacity-0 z-0 pointer-events-none'}`}
+            >
+              {Slide}
+            </div>
+          ))}
+        </div>
+        {/* Navigation */}
+        <button
+          onClick={prevSlide}
+          className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-2 shadow-lg z-20"
+          aria-label="Previous slide"
+        >
+          ◀
+        </button>
+        <button
+          onClick={nextSlide}
+          className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-2 shadow-lg z-20"
+          aria-label="Next slide"
+        >
+          ▶
+        </button>
+        {/* Dots */}
+        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-20">
+          {slides.map((_, idx) => (
+            <button
+              key={idx}
+              onClick={() => setCurrent(idx)}
+              className={`w-3 h-3 rounded-full ${idx === current ? 'bg-blue-600' : 'bg-gray-300'} transition-colors`}
+              aria-label={`Go to slide ${idx + 1}`}
+            />
+          ))}
+        </div>
       </div>
       <Footer />
     </>
-
   );
 }
